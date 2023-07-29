@@ -24,3 +24,10 @@ var swiper2 = new Swiper(".swiper-imagenes", {
 });
 
 /* Funcion para mostrar/ocultar el menú */
+var toggleMenu = document.querySelector('.menu-toggle');
+var nav = document.querySelector('.nav');
+
+function menuToggle() {
+    nav.classList.toggle('active');
+    toggleMenu.classList.toggle('active')
+}
