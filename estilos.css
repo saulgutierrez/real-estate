@@ -1,0 +1,608 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+/* Variables CSS */
+:root {
+    --white: #fff;
+    --dark-green: #005444;
+    --green: #448575;
+    --light-gray: #dbe8e4;
+    --dark-gray: #324b4f;
+    --font: 'DM Sans', sans-serif;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    overflow-x: hidden;
+}
+
+/* Inicio */
+.inicio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 1000;
+    background: rgba(68, 133, 117, 0.4);
+}
+
+.logo {
+    font-size: 2em;
+    color: var(--dark-green);
+}
+
+.inicio header .nav {
+    display: flex;
+    list-style: none;
+}
+
+.inicio header .nav li {
+    padding-left: 20px;
+}
+
+.inicio header .nav li a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: 0.4s;
+}
+
+.inicio header .nav li a:hover {
+    color: var(--dark-green);
+}
+
+.inicio .contenido {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inicio .contenido .container-texto {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: var(--green);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inicio .contenido .container-texto .texto {
+    max-width: 600px;
+    padding-left: 130px;
+}
+
+.inicio .contenido .container-texto .texto h2 {
+    color: var(--light-gray);
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.inicio .contenido .container-texto .texto h2 span {
+    color: var(--dark-gray);
+}
+
+.inicio .contenido .container-texto .texto p {
+    color: var(--light-gray);
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: var(--dark-green);
+    padding: 12px 25px;
+    color: var(--white);
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background: var(--light-gray);
+    color: var(--green);
+}
+
+.inicio .contenido .imagen {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.inicio .contenido .imagen img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sobre Nosotros */
+.sobre-nosotros {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 80px;
+}
+
+.sobre-nosotros .card-info {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre-nosotros .card-info h3 {
+    color: var(--dark-green);
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.sobre-nosotros .card-info p {
+    color: var(--dark-gray);
+    margin-bottom: 30px;
+}
+
+.sobre-nosotros .card-imagenes {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sobre-nosotros .card-imagenes .imgBox:nth-child(1) {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    left: 50px;
+}
+
+.sobre-nosotros .card-imagenes .imgBox:nth-child(2) {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    top: -50px;
+    right: 50px;
+    border: 15px solid var(--white);
+}
+
+.sobre-nosotros .card-imagenes .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ultimos Proyectos */
+.ultimos-proyectos {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ultimos-proyectos .swiper-imagenes {
+    width: 50%;
+    height: 600px;
+}
+
+.ultimos-proyectos .swiper-imagenes img,
+.ultimos-proyectos .swiper-miniaturas .swiper-slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.ultimos-proyectos .swiper-miniaturas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 600px;
+    background: var(--dark-gray);
+    padding: 50px;
+}
+
+.ultimos-proyectos .swiper-miniaturas .texto {
+    position: relative;
+    width: 400px;
+    top: 50px;
+}
+
+.ultimos-proyectos .swiper-miniaturas .texto h2 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    color: var(--light-gray);
+    margin-bottom: 20px;
+}
+
+.ultimos-proyectos .swiper-miniaturas .texto h2 span {
+    color: var(--green);
+}
+
+.ultimos-proyectos .swiper-miniaturas .texto p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: var(--light-gray);
+}
+
+.ultimos-proyectos .swiper-miniaturas .swiper-wrapper {
+    position: relative;
+    left: 0;
+    top: 100px;
+    display: flex;
+}
+
+.ultimos-proyectos .swiper-miniaturas .swiper-slide {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.ultimos-proyectos .swiper-miniaturas .swiper-slide.swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.btn-next {
+    position: absolute;
+    top: 420px;
+    left: 89%;
+    cursor: pointer;
+}
+
+.btn-prev {
+    position: absolute;
+    top: 420px;
+    left: 85%;
+    cursor: pointer;
+}
+
+.btn-next ion-icon,
+.btn-prev ion-icon {
+    font-size: 2em;
+    color: var(--green);
+    transition: 0.4s;
+}
+
+.btn-next ion-icon:hover,
+.btn-prev ion-icon:hover {
+    color: var(--light-gray);
+}
+/* Blog */
+.blog {
+    padding: 80px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo {
+    text-align: center;
+    max-width: 550px;
+}
+
+.blog .titulo h3 {
+    font-size: 2.5em;
+    color: var(--dark-green);
+    margin-bottom: 15px;
+}
+
+.blog .titulo p {
+    font-size: 1em;
+    color: var(--dark-gray);
+    margin-bottom: 50px;
+}
+
+.blog .cards {
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0fr));
+    gap: 30px;
+}
+
+.blog .cards .card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog .cards .card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.blog .cards .card .card-titulo {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    z-index: 10;
+    top: 30px;
+}
+
+.blog .cards .card .card-titulo h4 {
+    font-size: 1.2em;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.blog .cards .card .card-titulo .btn-blog {
+    text-decoration: none;
+    color: var(--white);
+    background: var(--dark-green);
+    padding: 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+
+.blog .cards .card .card-titulo .btn-blog:hover {
+    background: var(--green);
+}
+
+/* Newsletter */
+.newsletter {
+    width: 100%;
+    height: auto;
+    padding: 80px 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('13.jpg') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter .container {
+    position: relative;
+    width: 70%;
+    height: 350px;
+    background: rgba(219, 232, 228, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.newsletter .container .titulo h3 {
+    color: var(--dark-green);
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.newsletter .container .titulo p {
+    color: var(--dark-gray);
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.newsletter .container input[type="email"] {
+    outline: none;
+    border: 2px solid var(--dark-green);
+    padding: 10px 15px;
+    width: 300px;
+}
+
+.newsletter .container input[type="submit"] {
+    outline: none;
+    border: none;
+    background: var(--dark-green);
+    color: var(--white);
+    padding: 11.5px 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.newsletter .container input[type="submit"]:hover {
+    background: var(--green);
+}
+
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--green);
+    padding: 80px 100px;
+}
+
+footer .enlaces {
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+footer .enlaces .col {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .enlaces .col h4,
+footer .enlaces .col ul li strong,
+footer .enlaces .col ul li address {
+    color: var(--dark-gray);
+    font-size: 1em;
+}
+
+footer .enlaces .col ul {
+    list-style: none;
+}
+
+footer .enlaces .col ul li {
+    margin-bottom: 10px;
+}
+
+footer .enlaces .col ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--white);
+    transition: 0.4s;
+}
+
+footer .enlaces .col ul li a:hover {
+    color: var(--dark-gray);
+}
+
+footer .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .copyright::before {
+    content: '';
+    background: var(--dark-gray);
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    top: 250px;
+    left: 5%;
+    opacity: 0.4s;
+}
+
+footer .copyright p {
+    color: var(--white);
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+footer .copyright .rrss {
+    margin-top: 30px;
+}
+
+footer .copyright .rrss a {
+    color: var(--white);
+    font-size: 1.5em;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+footer .copyright .rrss a:hover {
+    color: var(--dark-gray);
+}
+
+/* Breakpoints */
+
+/* -- Pantallas Largas --*/
+@media only screen and (max-width: 1200px) {
+    .inicio .contenido .container-texto .texto {
+        max-width: 450px;
+        padding-left: 100px;
+    }
+
+    .btn-prev {
+        left: 84%;
+    }
+}
+
+/* -- Laptops --*/
+@media only screen and (max-width: 992px) {
+    .sobre-nosotros {
+        justify-content: space-between;
+    }
+
+    .btn-prev {
+        left: 82%;
+    }
+
+    .newsletter .container {
+        width: 85%;
+    }
+
+    footer {
+        height: 400px;
+    }
+
+    footer .enlaces {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    footer .copyright {
+        position: relative;
+        top: 20px;
+    }
+
+    footer .copyright::before {
+        width: 100%;
+        top: 0px;
+        left: 0%;
+    }
+}
+
+/* -- Tablets --*/
+@media only screen and (max-width: 768px) {
+    .inicio header {
+        padding: 30px 40px;
+        background: rgba(68, 133, 117, 0.9);
+    }
+
+    .inicio header .nav {
+        display: none;
+    }
+}
+
+/* -- Celulares --*/
