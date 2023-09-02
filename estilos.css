@@ -739,9 +739,14 @@ footer .copyright .rrss a:hover {
         font-size: 1em;
     }
 
+    .sobre-nosotros {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .sobre-nosotros .card-info {
         width: 100%;
-        max-width: 600px;
+        max-width: 400px;
     }
 
 
@@ -765,6 +770,7 @@ footer .copyright .rrss a:hover {
     .ultimos-proyectos .swiper-miniaturas {
         flex-direction: column-reverse;
         padding: 10px;
+        max-width: 400px;
     }
 
     .ultimos-proyectos .swiper-miniaturas .swiper-wrapper {
@@ -772,7 +778,8 @@ footer .copyright .rrss a:hover {
     }
 
     .ultimos-proyectos .swiper-miniaturas .texto {
-        max-width: 350px;
+        width: 100%;
+        max-width: 400px;
         top: -50px;
         padding: 20px;
     }
