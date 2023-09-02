@@ -662,7 +662,7 @@ footer .copyright .rrss a:hover {
 
     .inicio .contenido .container-texto .texto {
         position: relative;
-        top: 60px;
+        top: 70px;
         max-width: 450px;
         padding-left: 0px;
         text-align: center;
@@ -718,7 +718,7 @@ footer .copyright .rrss a:hover {
 
 /* -- Celulares --*/
 @media only screen and (max-width: 400px) {
-    -inicio heaser {
+    .inicio header {
         padding: 20px 30px;
     }
 
@@ -740,8 +740,10 @@ footer .copyright .rrss a:hover {
     }
 
     .sobre-nosotros .card-info {
-        padding: 30px;
+        width: 100%;
+        max-width: 600px;
     }
+
 
     .sobre-nosotros .card-info h3 {
         font-size: 2em;
